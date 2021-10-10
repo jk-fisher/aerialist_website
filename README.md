@@ -1,2 +1,3 @@
-# aerialist_website
-Promotional website development for aerialist performer.
+# Aerialist Website
+## Intro
+Promotional website development for aerialist performer with video reel.
