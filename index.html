@@ -8,6 +8,7 @@
     <title>Jessica Sullivan</title>
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,24 +16,27 @@
 </head>
 <body> 
     <section id="parallax" class="landing-img" data-stellar-background-ratio="0.7">
-        <nav class="navigation-container" id="nav-container">
+        <nav id="nav-container">
             <div class="header">
                 <a href="./index.html"><h1>Jessica Sullivan</h1></a>
             </div>
-            <ul class="topnav" id="myTopnav">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                    <i class="fa fa-bars"></i>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/dr_silk/" target='_blank'><i class='fab fa-instagram' style='font-size:32px;color:white'></i></a>
-                <a href="./contact.html"><i class='far fa-envelope' style='font-size:30px;color:white'></i></a>
-                <a href="./gallery.html"><i class='far fa-images' style='font-size:30px;color:white'></i></a>
-            </div>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/dr_silk/" target='_blank'><i class='fab fa-instagram' style='font-size:32px;color:white'></i></a>
+            <a href="./contact.html"><i class='far fa-envelope' style='font-size:30px;color:white'></i></a>
+            <a href="./gallery.html"><i class='far fa-images' style='font-size:30px;color:white'></i></a>
+        </div>
     </section>
     <section id="about" class="about-container">
         <h2 class="about-header">About</h2>

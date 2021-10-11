@@ -1,28 +1,13 @@
-// $(window).scroll(){
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav responsive") {
-//     x.className === "topnav";
-// }
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li')
 
-function navFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-    document.getElementById("nav-container").style.backgroundColor = "black";
-  } else {
-    document.getElementById("nav-container").style.backgroundColor = "transparent";
-  }
-}
+hamburger.addEventListener("click", () =>{
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  })
+});
 
 //parallax scroll effect 
 
